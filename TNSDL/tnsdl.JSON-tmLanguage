@@ -1,0 +1,61 @@
+{ "name": "TNSDL",
+  "scopeName": "source.tnsdl",
+  "fileTypes": ["sdl","sdt","spd","sdt"],
+  "patterns": [
+
+      { "match": "\\b(TO|OUTPUT|INPUT|NEXTSTATE|FPAR|CALL|PROCEDURE|ENDPROCEDURE|TASK|IMPLEMENTATION|MODULE|START|RETURNS)\\b",
+          "name": "keyword.source.tnsdl",
+          "comment": "TNSDL type keyword"
+      },
+      {
+        "match": "\\b([a-zA-Z0-9]+[a-zA-Z0-9_]*_s|SIGNAL|NIL|T|F|pid|word|dword|byte|bool|bytepointer|[a-zA-Z]+[a-zA-Z0-9_]*_t)\\b",
+        "name": "storage.type.tnsdl"
+      },
+      {
+        "match": ":=",
+        "name": "keyword.operator.assignment.tnsdl"
+      },
+            { "match": "\\b(PRIORITY|DESTROY_MSG_IF_NOT_WO_STATE|[a-zA-Z]+[a-zA-Z0-9_]*_ec|[a-zA-Z]+[a-zA-Z0-9_]*_c|SENDER_PHYS_COMPUTER|SENDER|CONSTANT|TYPE|ENDTYPE|REPRESENTATION)\\b",
+          "name": "constant.language.tnsdl",
+          "comment": "TNSDL type keyword"
+      },
+      {
+          "match": "=|<|>|>=|<=|/=",
+          "name" :"keyword.operator.comparison.tnsdl"
+      },
+      {
+           "match": "\\b(DECISION|ELSE|ENDDECISION|WHILE|ENDWHILE|RETURN)\\b",
+           "name": "keyword.control.tnsdl"
+      },
+      {  
+        "name": "keyword.operator.arithmetic.tnsdl",
+        "match": "\\b(SET|-\\>|\\+|\\-|ADDPTR|POINTER|AND|OR|NOT|SIZEOF)\\b"
+      },
+      {
+        "match" : "\\b(DCL|WITHWARMING|IN|OUT)\\b",
+        "name" :"storage.modifier.tnsdl"
+      },
+      { "name": "string.quoted.double.tnsdl",
+        "begin": "\\'",
+        "end": "\\'"
+      },
+      {
+          "name": "comment.block.tnsdl",
+          "begin": "/\\*",
+          "end" :  "\\*/"
+      },
+      {
+        "match":"[a-zA-Z]+[a-zA-Z0-9_]*_r\\b",
+        "name":"entity.name.function.tnsdl"
+      },
+      {
+        "match":",",
+        "name" :"punctuation.seperator.property.tnsdl"
+      },
+      {
+        "match" :"\\b(0(x|X)[0-9a-fA-F]*|[0-9]+)\\b",
+        "name" :"constant.numeric.tnsdl"
+      }
+  ],
+  "uuid": "8850f81b-44db-4ea2-ae88-71f352d66787"
+}
