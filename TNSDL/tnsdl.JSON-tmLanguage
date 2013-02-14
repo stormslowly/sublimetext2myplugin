@@ -1,4 +1,4 @@
-{ "name": "TNSDL",
+{ "name": "tnsdl",
   "scopeName": "source.tnsdl",
   "fileTypes": ["sdl","sdt","spd","sdt"],
   "patterns": [

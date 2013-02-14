@@ -10,7 +10,7 @@
 		<string>sdt</string>
 	</array>
 	<key>name</key>
-	<string>TNSDL</string>
+	<string>tnsdl</string>
 	<key>patterns</key>
 	<array>
 		<dict>
