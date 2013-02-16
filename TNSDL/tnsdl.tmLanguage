@@ -17,7 +17,7 @@
 			<key>comment</key>
 			<string>TNSDL type keyword</string>
 			<key>match</key>
-			<string>\b(TO|OUTPUT|INPUT|NEXTSTATE|FPAR|CALL|PROCEDURE|ENDPROCEDURE|TASK|IMPLEMENTATION|MODULE|START|RETURNS)\b</string>
+			<string>\b(TO|OUTPUT|INPUT|NEXTSTATE|FPAR|CALL|TASK|IMPLEMENTATION|MODULE|ENDPROCEDURE|START|RETURNS)\b</string>
 			<key>name</key>
 			<string>keyword.source.tnsdl</string>
 		</dict>
@@ -82,10 +82,52 @@
 			<string>comment.block.tnsdl</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.source.tnsdl</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.tnsdl</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>[a-zA-Z]+[a-zA-Z0-9_]*_r\b</string>
+			<string>\b(PROCEDURE)\s+([a-zA-Z_]\w*);</string>
 			<key>name</key>
-			<string>entity.name.function.tnsdl</string>
+			<string>meta.function.tnsdl</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.tnsdl</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.begin.tnsdl</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.function.tnsdl</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.end.tnsdl</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>([a-zA-Z_]\w*)\s*(\()(.*?)(\))</string>
+			<key>name</key>
+			<string>meta.function.tnsdl</string>
 		</dict>
 		<dict>
 			<key>match</key>

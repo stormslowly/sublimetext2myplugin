@@ -3,7 +3,7 @@
   "fileTypes": ["sdl","sdt","spd","sdt"],
   "patterns": [
 
-      { "match": "\\b(TO|OUTPUT|INPUT|NEXTSTATE|FPAR|CALL|PROCEDURE|ENDPROCEDURE|TASK|IMPLEMENTATION|MODULE|START|RETURNS)\\b",
+      { "match": "\\b(TO|OUTPUT|INPUT|NEXTSTATE|FPAR|CALL|TASK|IMPLEMENTATION|MODULE|ENDPROCEDURE|START|RETURNS)\\b",
           "name": "keyword.source.tnsdl",
           "comment": "TNSDL type keyword"
       },
@@ -45,8 +45,22 @@
           "end" :  "\\*/"
       },
       {
-        "match":"[a-zA-Z]+[a-zA-Z0-9_]*_r\\b",
-        "name":"entity.name.function.tnsdl"
+        "match":"\\b(PROCEDURE)\\s+([a-zA-Z_]\\w*);",
+        "name":"meta.function.tnsdl",
+        "captures": {
+          "1": { "name": "keyword.source.tnsdl" },
+          "2": { "name": "entity.name.function.tnsdl"}
+        }
+      },
+      {
+        "match":"([a-zA-Z_]\\w*)\\s*(\\()(.*?)(\\))",
+        "name":"meta.function.tnsdl",
+        "captures": {
+          "1": { "name": "entity.name.function.tnsdl"},
+          "2": { "name" :"punctuation.definition.parameters.begin.tnsdl"},
+          "3": { "name" :"variable.parameter.function.tnsdl"},
+          "4": { "name" :"punctuation.definition.parameters.end.tnsdl"}
+        }
       },
       {
         "match":",",
