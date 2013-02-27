@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+import unittest 
+
+if __name__ == '__main__':
+    testsuite = unittest.TestLoader().discover('${1:testfoler}',pattern='${2:test_*.py}')
+    unittest.TextTestRunner(verbosity=2).run(testsuite)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>newall</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>

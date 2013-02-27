@@ -9,7 +9,7 @@ DCL
     ${5:vars}		${6:var_type};
     
 START;
-
+    ${7}
 ENDPROCEDURE ${1: proc_name};
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+
+	"build_systems":
+	[
+        {
+            "name": "${1:builder}",
+            "cmd": ["${2:cmd}"]
+        }
+    ]
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>projb</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.json-tmlanguage</scope>
+</snippet>

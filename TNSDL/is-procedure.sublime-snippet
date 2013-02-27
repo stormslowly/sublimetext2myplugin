@@ -7,7 +7,7 @@ RETURNS
     bool;
 
 START;
-
+  ${4}
   RETURN F;
 ENDPROCEDURE ${1:proc_name};
 

@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+import unittest
+
+class Test_parse(unittest.TestCase):
+	def setUp(self):
+		print("set up")
+
+	def tearDown(self):
+		print("tear Down")
+
+	def test_failcase(self):
+		self.fail("new case added")
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>newcase</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
