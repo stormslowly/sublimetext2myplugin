@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-"folder_exclude_patterns" : [${1:"excludePattern"}]
+"folder_exclude_patterns" : ["${1:excludePattern}"]
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>excfo</tabTrigger>

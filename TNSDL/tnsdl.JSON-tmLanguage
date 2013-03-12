@@ -35,10 +35,7 @@
         "match" : "\\b(DCL|SAVE|WITHWARMING|IN|OUT)\\b",
         "name" :"storage.modifier.tnsdl"
       },
-      { "name": "string.quoted.double.tnsdl",
-        "begin": "\\'",
-        "end": "\\'"
-      },
+
       {
           "name": "comment.block.tnsdl",
           "begin": "/\\*",
