@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+#include <CppUTest/TestHarness.h>
+
+TEST_GROUP(${1:GroupName})
+{
+
+	void setup(){
+	}
+
+	void teardown(){
+	}
+};
+
+TEST(${1:GroupName},${2:CaseName})
+{
+	STRCMP_EQUAL("this is a  new case ","Oops");
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>new</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+</snippet>
