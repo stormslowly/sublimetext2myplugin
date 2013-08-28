@@ -128,7 +128,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>([a-zA-Z_]\w*)\s*(\(.*\))</string>
+			<string>([a-zA-Z_]\w*)\s*\((.*)\)</string>
 			<key>name</key>
 			<string>meta.function.tnsdl</string>
 		</dict>
